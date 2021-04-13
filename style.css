@@ -26,7 +26,6 @@ span.menu {
 .logo-link,
 .menu-bar-link {
     display: inline-block;
-
     font-weight: 600;
     font-size: 24px;
 }
@@ -44,10 +43,15 @@ a:hover {
     cursor: pointer;
     text-decoration: none;
 }
-
-.logo-link:hover,
+.menu-group ul li a {
+    text-decoration: none;
+    padding-bottom: .6em;
+    font-weight: 600;
+}
 .menu-group ul li a:hover {
-    color: rgb(81, 90, 216);
+    color: #058BFF;
+    border-bottom: 2px solid #058BFF;
+    
 }
 
 .menu-bar-link {
@@ -72,17 +76,17 @@ a:hover {
     padding-bottom: 5px;
     margin: 0 0 10px 0;
 }
-
-.menu-group ul li a {
-    text-decoration: none;
+.link-button-nav {
+    padding: 0.8em;
+    width: 7em;
+    color:  #f2f2f2;
 }
-
-span.span-link .link-button{
-width:fit-content;
-padding:0;
-background:none;
-color:#333333;
-margin-bottom:15px;
+.link-button-nav a{
+    color: #f2f2f2;
+    transition: .9s ease-in-out;
+}
+.link-button-nav a:hover{
+    color: #121212;
 }
 
 @media screen and (min-width: 768px) {
@@ -101,8 +105,8 @@ margin-bottom:15px;
     }
 
     span.span-link {
-display:flex;
-flex-direction: row;
+        display:flex;
+        flex-direction: row;
     }
 
     span.span-link .link-button{
@@ -119,9 +123,9 @@ flex-direction: row;
     }
 
     span.span-link .link-button:nth-child(2){
-border:#045293;
-background:none;
-color:#121212;
+        border:#045293;
+        background:none;
+        color:#121212;
     }
     .menu-group {
         width: 100%;
@@ -152,7 +156,7 @@ color:#121212;
     .menu-group ul li a {
         text-decoration: none;
     }
-
+    
 }
 
 /* End of Navigation Bar */
@@ -249,6 +253,12 @@ section .hero-right p {
     font-weight:900;
     margin-right:auto;
     border-radius:5px;
+    transition: .9s ease-in-out;
+}
+.link-button:hover{
+    background-color: #f2f2f2;
+    color: #058BFF;
+    border: 2px solid #058BFF;
 }
 
 @media  (max-width:768px) {
@@ -537,7 +547,6 @@ font-size:1.8rem;
 .form-group input, .form-group select{
     display:block;
     width:100%;
-    height:35px;
     background:#f1f1f1;
     outline:none;
     padding:1.2rem 0.9rem;
@@ -569,6 +578,12 @@ button{
     border-radius:5px;
     margin-left:30px;
     cursor:pointer;
+    transition: .9s ease-in-out;
+}
+button:hover{
+    background-color: #f2f2f2;
+    color:#058BFF;
+    border:2px solid #058BFF;
 }
 
 @media  (max-width:768px){
