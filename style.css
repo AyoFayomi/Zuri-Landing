@@ -206,7 +206,7 @@ section .hero-right h2 {
     font-weight: 700;
     line-height: 52px;
     letter-spacing: 0.005em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 
 }
@@ -630,6 +630,32 @@ section.details{
     display:flex;
     justify-content:space-around;
     align-items:flex-start;
+    color:#fff;
+    width:100%;
+}
+
+.details ul{
+    list-style-type: none;
+    color:#fff;
+    line-height:20px;
+    font-size:0.9rem;
+}
+
+.details ul li a{
+     color:#fff;
+     font-size:1rem;
+     line-height:20px;
+     font-weight:bold;
+}
+
+.details .social-media h2, .address h2{
+font-size:1.3rem;
+margin:10px 0;
+}
+
+.details .social-media p,
+.address p{
+font-size:1rem;
 }
 
 section.credit{
@@ -640,4 +666,33 @@ section.credit h2{
     color:#fff;
     text-align: center;
     font-size:2rem;
+}
+
+@media (max-width:768px){
+    footer{
+        padding:2rem 0.7rem;
+    }
+    section.details{
+        display:block;
+        padding:2rem 0.8rem;
+    }
+
+    section.details ul{
+        margin-bottom:20px;
+    }
+
+    .details .social-media h2,
+    .address h2 {
+        font-size: 1rem;
+        
+    }
+    .details ul li a {
+        
+        font-size: 0.9rem;
+        
+    }
+
+    section.credit h2 {
+        font-size: 1.3rem;
+    }
 }
